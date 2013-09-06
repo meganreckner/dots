@@ -1,9 +1,15 @@
+# ===== Homeshick =====
+homeshick --quiet refresh
+
+
 # ===== Oh-My-Zsh =====
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="af-magic"
 plugins=(gem git last-working-dir rails3)
 
+AUTO_CD="true"
 COMPLETION_WAITING_DOTS="true"
+DISABLE_CORRECTION="true"
 
 
 # ===== Aliases =====
