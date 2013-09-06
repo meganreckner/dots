@@ -1,0 +1,42 @@
+[user]
+	name = Megan Reckner
+	email = megan.reckner@gmail.com
+[github]
+	user = meganreckner
+[core]
+  editor = vim
+  excludesfile = $HOME/.gitignore_global
+[help]
+  autocorrect = 1
+[push]
+	default = current
+[pull]
+	default = current
+[rebase]
+	stat = true
+	autosquash = true
+[alias]
+	ab = branch --remote
+	co = checkout
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	nb = checkout -b
+	ri = rebase -i
+	rp = remote prune origin
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
