@@ -1,3 +1,6 @@
+execute pathogen#infect()
+execute pathogen#helptags()
+
 "Basic settings
 "=======================================================================
 set nocompatible
