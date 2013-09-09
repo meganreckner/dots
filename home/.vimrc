@@ -8,7 +8,7 @@ set ruler "Sets up status bar
 set laststatus=2 "Always keeps the status bar active
 set number "Turns on line numbering
 set t_Co=256 "Sets Vim to use 256 colors
-colorscheme elflord
+colorscheme molokai
 
 
 "Indentation settings
