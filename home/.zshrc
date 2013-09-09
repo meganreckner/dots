@@ -1,7 +1,3 @@
-# ===== Homeshick =====
-homeshick --quiet refresh
-
-
 # ===== Oh-My-Zsh =====
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="af-magic"
@@ -20,6 +16,10 @@ alias zr="zeus rake"
 alias zs="zeus server"
 alias zspec="zeus rspec ./spec"
 alias zuke="zeus cucumber -r features"
+
+
+# ===== Homeshick =====
+homeshick --quiet refresh
 
 
 # ===== Source it! =====
