@@ -1,7 +1,7 @@
 # ===== Oh-My-Zsh =====
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="af-magic"
-plugins=(gem git last-working-dir rails3)
+ZSH_THEME="ys"
+plugins=(gem git last-working-dir rails)
 
 AUTO_CD="true"
 COMPLETION_WAITING_DOTS="true"
@@ -9,7 +9,7 @@ DISABLE_CORRECTION="true"
 
 
 # ===== Aliases =====
-alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
+# alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
 alias zart="zeus start"
 alias zc="zeus console"
 alias zr="zeus rake"
@@ -19,7 +19,7 @@ alias zuke="zeus cucumber -r features"
 
 
 # ===== Homeshick =====
-homeshick --quiet refresh
+# homeshick --quiet refresh
 
 
 # ===== Source it! =====
@@ -28,5 +28,6 @@ then
   source ~/.localrc
 fi
 
+source $HOME/.homesick/repos/homeshick/homeshick.sh
 source $ZSH/oh-my-zsh.sh
 
