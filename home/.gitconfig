@@ -23,6 +23,9 @@
   nb = checkout -b
   ri = rebase -i
   rp = remote prune origin
+  save = !git add -A && git commit -m ':scissors: SAVEPOINT'
+  wip = !git add -u && git commit -m ':scissors: WIP'
+	workprofile = config user.email \"megan.reckner@mobiledefense.com\"
 [color]
   branch = auto
   diff = auto
@@ -40,7 +43,13 @@
   added = yellow
   changed = green
   untracked = cyan
-
+[merge]
+    tool=diffmerge
+[mergetool "diffmerge"]
+    cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+    trustExitCode = false
+[mergetool]
+    keepBackup = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
