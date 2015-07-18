@@ -1,7 +1,7 @@
 # ===== Oh-My-Zsh =====
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ys"
-plugins=(gem git last-working-dir rails)
+plugins=(brew bundler gem git last-working-dir rails)
 
 AUTO_CD="true"
 COMPLETION_WAITING_DOTS="true"
